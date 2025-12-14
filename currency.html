@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css" />
+  </head>
+  <body>
+    <div class="container">
+            <h1>Currency Converter 💱</h1>
+
+      <label for="amount"><b>Amount 💰</b></label>
+      <input type="number" id="amount" placeholder="0.00" />
+      <label for="from">From Currency 🌍</label>
+      <select id="from">
+        <option selected disabled>Select Currency</option>
+        <option>USD</option>
+        <option>INR</option>
+        <option>EUR</option>
+        <option>AUD</option>
+        <option>RUB</option>
+        <option>KRW</option>
+        <option>CNY</option>
+        <option>JPY</option>
+      </select>
+     
+      <label for="to">To Currency 🎯</label>
+      <select id="to">
+        <option selected disabled>Select Currency</option>
+        <option>INR</option>
+        <option>USD</option>
+        <option>EUR</option>
+        <option>AUD</option>
+        <option>RUB</option>
+        <option>KRW</option>
+        <option>CNY</option>
+        <option>JPY</option>
+      </select>
+      <button id="convertBtn" onclick="getCurrency()">Convert Now ⇄</button>
+      <div id="resultBox">
+        <div id="placeholder">✨ Ready to convert magic into money... ✨</div>
+
+        <div id="resultData">
+          <span id="toText"></span>
+          <strong id="finalAmount"></strong>
+        </div>
+      </div>
+    </div>
+    <script src="./currency.js"></script>
+  </body>
+</html>
